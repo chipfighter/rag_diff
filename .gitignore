@@ -1,2 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
 .idea/
+.vscode/
 *.iml
+*.swp
+*.swo
+
+# RAG-Diff runtime data
+.ragdiff/
+
+# OS
+.DS_Store
+Thumbs.db
