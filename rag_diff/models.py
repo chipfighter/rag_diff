@@ -13,6 +13,15 @@ class TestCase(BaseModel):
     metadata: Optional[dict] = None
 
 
+class JudgeVerdict(BaseModel):
+    """Result of a single judge evaluation dimension."""
+
+    dimension: str  # "faithfulness" | "relevancy"
+    passed: bool
+    score: float  # 0.0 to 1.0
+    reason: str
+
+
 class CaseResult(BaseModel):
     """Result of running a single test case through the adapter."""
 
@@ -24,6 +33,7 @@ class CaseResult(BaseModel):
     tokens_used: Optional[int] = None
     expected_answer: Optional[str] = None
     metadata: Optional[dict] = None
+    judge_verdicts: Optional[list[JudgeVerdict]] = None
 
 
 class RunSnapshot(BaseModel):
