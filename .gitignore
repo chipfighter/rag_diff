@@ -24,6 +24,9 @@ env/
 # RAG-Diff runtime data
 .ragdiff/
 
+# Secrets
+.env
+
 # OS
 .DS_Store
 Thumbs.db

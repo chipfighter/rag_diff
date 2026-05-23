@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Optional
 
 import typer
+from dotenv import load_dotenv
 from rich.console import Console
 
 from rag_diff.core.diff import diff_runs
@@ -32,6 +33,9 @@ console = Console()
 @app.callback()
 def main() -> None:
     """Regression testing and diagnostic diffing for RAG pipelines."""
+    # Load .env so OPENAI_API_KEY / OPENAI_BASE_URL (e.g. DeepSeek) are available
+    # to the judge and to adapters loaded in this process.
+    load_dotenv()
 
 
 # ---------------------------------------------------------------------------

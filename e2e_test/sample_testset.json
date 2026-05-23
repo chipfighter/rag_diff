@@ -1,0 +1,12 @@
+[
+  {
+    "query": "What is RAG?"
+  },
+  {
+    "query": "How does vector search work?"
+  },
+  {
+    "query": "What are embeddings?",
+    "expected_answer": "Embeddings are dense vector representations of text."
+  }
+]

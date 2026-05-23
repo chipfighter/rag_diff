@@ -1,0 +1,4 @@
+# Dependencies for the example RAG pipeline only (kept out of rag-diff core).
+# Note: sentence-transformers pulls in torch (a few hundred MB on first install).
+sentence-transformers>=2.2.0
+numpy>=1.24.0

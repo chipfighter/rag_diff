@@ -1,0 +1,22 @@
+[
+  {
+    "query": "How is overtime pay calculated for weekend work?"
+  },
+  {
+    "query": "How many annual leave days do employees get after more than 5 years of service?",
+    "expected_answer": "20 days of annual leave per year."
+  },
+  {
+    "query": "What is the customer refund policy within the first 30 days of purchase?"
+  },
+  {
+    "query": "How many days per week can employees work remotely?",
+    "expected_answer": "Up to 3 days per week, with manager approval."
+  },
+  {
+    "query": "What is the deadline to submit a travel expense claim?"
+  },
+  {
+    "query": "What are the core working hours for remote employees?"
+  }
+]
